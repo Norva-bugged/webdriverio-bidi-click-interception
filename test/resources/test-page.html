@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDriver BiDi Click Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <button id="bottom-button">Covered Button</button>
+      <div id="overlay"></div>
+    </div>
+    <div id="event-log">Event Log:</div>
+
+    <script>
+      document
+        .getElementById("bottom-button")
+        .addEventListener("click", function () {
+          const log = document.getElementById("event-log");
+          log.innerHTML += "<br>Bottom button clicked!";
+        });
+
+      document.getElementById("overlay").addEventListener("click", function () {
+        const log = document.getElementById("event-log");
+        log.innerHTML += "<br>Overlay clicked!";
+      });
+    </script>
+  </body>
+</html>

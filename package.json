@@ -1,0 +1,21 @@
+{
+  "name": "webdriverio-covered-click-test",
+  "version": "1.0.0",
+  "description": "Test for covered element click behavior in WebdriverIO v9 with WebDriver BiDi",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [
+    "webdriverio",
+    "testing",
+    "webdriver-bidi"
+  ],
+  "devDependencies": {
+    "@wdio/cli": "^9.3.1",
+    "@wdio/local-runner": "^9.3.1",
+    "@wdio/mocha-framework": "^9.3.1",
+    "@wdio/spec-reporter": "^9.3.1",
+    "webdriverio": "^9.3.1"
+  }
+}
